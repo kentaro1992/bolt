@@ -130,7 +130,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   font-size: 0;
-  padding-top: 40px;
+  margin-top: 40px;
 }
 
 .image{
@@ -168,7 +168,7 @@ a {
 }
 
 .mail-btn{
-  font-size:12px;
+  font-size: 12px;
   padding: 14px 20px;
   background-color: #74cfae;
   color: #fff;
@@ -223,10 +223,10 @@ a {
 .last-content-inner{
   width: 100%;
   background-color: #f2f2f2;
+  padding: 200px 0;
 }
 
 .last-content{
-  padding: 200px 0;
 }
 
 .last-content-img{
