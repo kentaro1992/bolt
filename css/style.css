@@ -1,47 +1,7 @@
 @charset "UTF-8";
 
 body{
-  font-family: Lato;
   font-family: Raleway;
-}
-
-.header{
-  width: 100%;
-  background-color: #fff;
-  height: 80px;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.header-inner{
-  width: 1100px;
-  margin: 0 auto;
-}
-
-.bolt-icon{
-  font-size: 40px;
-  margin: 15px 0;
-  color: gray;
-  float: left;
-}
-
-.header-btn{
-  font-size: 12px;
-  padding: 14px 12px;
-  margin-top: 15px;
-  color: #fff;
-  background-color: #74cfae;
-  float: right;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.header-btn:hover{
-  transition: 0.3s;
-  color: #333;
 }
 
 .clearfix:after {
@@ -50,20 +10,64 @@ body{
   clear: both;
 }
 
+a {
+  text-decoration: none;
+}
+
+.content{
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.header{
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.header-inner{
+  padding: 15px 0;
+}
+
+.bolt-icon{
+  font-size: 40px;
+  color: #808080;
+  float: left;
+}
+
+.header-btn{
+  font-size: 12px;
+  padding: 14px 12px;
+  color: #fff;
+  background-color: #74cfae;
+  float: right;
+  transition: 0.3s;
+}
+
+.header-btn:hover{
+  transition: 0.3s;
+  color: #333;
+}
+
+.main{
+  padding-top: 80px;
+}
+
 .main-inner-title{
   width: 100%;
   background-color: #f2f2f2;
 }
 
-.main-title{
-  width: 1100px;
-  margin: 0 auto;
-  margin-top: 80px;
+.main-block{
   padding: 250px 0;
   text-align: center;
 }
 
-h1{
+.main-title{
   margin-bottom: 20px;
   font-size: 90px;
   color: #74cfae;
@@ -82,9 +86,6 @@ h1{
 }
 
 .top-content{
-  width: 1100px;
-  margin: 0 auto;
-  display: table;
   color: #fff;
   padding-top: 50px;
 }
@@ -94,47 +95,47 @@ h1{
   margin: 0 10% 0 5%;
 }
 
-.top-content-text{
+.top-content-block{
   text-align: center;
 }
 
-h2{
+.top-content-title{
   font-size: 24px;
   margin-bottom: 35px;
 }
 
-.top-content-sentence{
+.top-content-text{
   font-size: 20px;
+  line-height: 30px;
 }
 
 .middle-content-inner{
   width: 100%;
   background-color: #f2f2f2;
+  padding-top: 60px;
+  padding-bottom: 70px;
 }
 
 .middle-content{
-  width: 1100px;
-  margin: 0 auto;
-  color: gray;
+  color: #808080;
 }
 
-h3{
+.middle-content-title{
   font-size: 24px;
-  padding: 60px 0 40px 0;
   text-align: center;
 }
 
 .middle-content-img{
   width: 1100px;
-  height: 680px;
   display: flex;
   flex-wrap: wrap;
   font-size: 0;
+  padding-top: 40px;
 }
 
 .image{
+  margin-top: 80px;
   margin-left: 100px;
-  margin-bottom: 80px;
   opacity: 0.7;
   transition: 0.3s;
   cursor: pointer;
@@ -145,37 +146,37 @@ h3{
   transition: 0.3s;
 }
 
-.image:nth-child(1){
+.image:nth-child(3n+1){
   margin-left: 0;
 }
 
-.image:nth-child(4){
-  margin-left: 0;
+.image:nth-child(-n+3){
+  margin-top: 0;
 }
 
 .middle-content-bottom{
-  display: flex;
+  padding-top: 90px;
 }
 
 .middle-content-text{
-  margin: 90px 90px 70px 100px;
+  padding: 0 90px;
   font-size: 20px;
   width: 60%;
+  float: left;
   text-align: center;
+  line-height: 30px;
 }
 
-.mail-block{
+.mail-btn{
   font-size:12px;
   padding: 14px 20px;
   background-color: #74cfae;
-  display: inline-block;
   color: #fff;
-  margin: auto 0;
-  cursor: pointer;
+  float: left;
   transition: 0.3s;
 }
 
-.mail-block:hover{
+.mail-btn:hover{
   color: #333;
   transition: 0.3s;
 }
@@ -186,22 +187,23 @@ h3{
 }
 
 .bottom-content{
-  width: 1100px;
-  margin: 0 auto;
-  padding-bottom: 100px;
   text-align: center;
 }
 
+.bottom-block{
+  padding-top: 70px;
+}
+
 .bottom-title{
-  padding: 70px 0;
   font-size: 20px;
   color: #fff;
 }
 
 .cercle{
-width: 1028px;
-margin: 0 auto;
-padding-bottom: 122px
+  width: 1028px;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 100px
 }
 
 .cercle-image{
@@ -216,7 +218,7 @@ padding-bottom: 122px
 }
 
 .cercle-image p{
-margin-top: 10px;
+  margin-top: 10px;
 }
 
 .last-content-inner{
@@ -225,8 +227,6 @@ margin-top: 10px;
 }
 
 .last-content{
-  width: 1100px;
-  margin: 0 auto;
   padding: 200px 0;
 }
 
@@ -243,7 +243,6 @@ margin-top: 10px;
   font-size: 50px;
   background-color: #f2f2f2;
   transition: 0.3s;
-  cursor: pointer;
 }
 
 .icon:hover{
