@@ -4,14 +4,14 @@ body{
   font-family: Raleway;
 }
 
+a {
+  text-decoration: none;
+}
+
 .clearfix:after {
   display: block;
   content: "";
   clear: both;
-}
-
-a {
-  text-decoration: none;
 }
 
 .content{
@@ -27,10 +27,10 @@ a {
   right: 0;
   left: 0;
   z-index: 1;
+  padding: 15px 0;
 }
 
 .header-inner{
-  padding: 15px 0;
 }
 
 .bolt-icon{
@@ -54,16 +54,16 @@ a {
 }
 
 .main{
-  padding-top: 80px;
+  padding-top: 71px;
 }
 
 .main-inner-title{
   width: 100%;
   background-color: #f2f2f2;
+  padding: 250px 0;
 }
 
 .main-block{
-  padding: 250px 0;
   text-align: center;
 }
 
@@ -83,11 +83,11 @@ a {
 .top-content-inner{
   width: 100%;
   background-color: #74cfae;
+  padding-top: 50px;
 }
 
 .top-content{
   color: #fff;
-  padding-top: 50px;
 }
 
 .top-content-img{
@@ -155,7 +155,7 @@ a {
 }
 
 .middle-content-bottom{
-  padding-top: 90px;
+  margin-top: 90px;
 }
 
 .middle-content-text{
@@ -184,6 +184,7 @@ a {
 .bottom-content-inner{
   width: 100%;
   background-color: #4e4e4e;
+  padding: 70px 0 100px 0;
 }
 
 .bottom-content{
@@ -191,19 +192,17 @@ a {
 }
 
 .bottom-block{
-  padding-top: 70px;
+  margin-bottom: 70px;
 }
 
 .bottom-title{
-  font-size: 20px;
+  font-size: 24px;
   color: #fff;
 }
 
 .cercle{
   width: 1028px;
   margin: 0 auto;
-  padding-top: 70px;
-  padding-bottom: 100px
 }
 
 .cercle-image{
@@ -253,6 +252,7 @@ a {
 .footer{
   width: 100%;
   background-color: #74cfae;
+  padding: 20px 0 25px 0;
 }
 
 .footer-inner{
@@ -261,7 +261,6 @@ a {
 }
 
 .footer-text{
-  padding: 20px 0 25px 0;
   text-align: right;
   color: #fff;
 }
